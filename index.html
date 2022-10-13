@@ -63,12 +63,17 @@
     </div>
 
     <form action="#" method="post" class="form">
-      <input type="text" name="email" placeholder="Email Address" id="input-email"
-        class="form__input form__input--error">
+      <div class="form__contenedor">
+        <input type="text" name="email" placeholder="Email Address" id="input-email"
+          class="form__input form__input--error">
+        
+        <button type="submit" class="form__boton">
+          <img src="./images/icon-arrow.svg" alt="Icono flecha" class="form__img">
+        </button>
+        <img src="./images/icon-error.svg" alt="Icono error" class="form__img-error">
+      </div>
 
-      <button type="submit" class="form__boton">
-        <img src="./images/icon-arrow.svg" alt="Icono flecha" class="form__img">
-      </button>
+      <p class="form__p">Please provide a valid email</p>
     </form>
   </main>
 

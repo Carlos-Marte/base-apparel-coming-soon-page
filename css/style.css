@@ -109,7 +109,7 @@ body {
 .main__p {
     margin: 1em 0 0 0;
     font-weight: 400;
-    line-height: 1.2;
+    line-height: 1.5;
     color: var(--desaturated-red);
 }
 
@@ -119,8 +119,6 @@ body {
     margin: 0 auto;
     margin-top: 2em;
     text-align: center;
-    position: relative;
-    /* background: red; */
 }
 
 /* Form input */
@@ -141,14 +139,18 @@ body {
 }
 
 /* Input error */
-/* 
+
 .form__input--error {
     border-color: var(--soft-red);
-} */
+}
+
+.form__contenedor {
+    position: relative;
+}
 
 /* Form boton */
 .form__boton {
-    height: 100%;
+    height: 54.31px;
     padding: 1em 1.9rem;
     border: none;
     border-radius: 25px;
@@ -165,6 +167,28 @@ body {
     display: inline-block;
     width: 100%;
     height: auto;
+}
+
+/* Boton imagen error */
+.form__img-error {
+    height: 24px;
+    width: 24px;
+
+    position: absolute;
+    z-index: 50;
+    top: 30%;
+    right: 25%;
+}
+
+/* Mensaje error */
+.form__p {
+    display: inline-block;
+    width: 75%;
+    margin-top: .6em;
+    color: var(--soft-red);
+    font-size: .8em;
+    font-weight: 400;
+    text-align: left;
 }
 
 /* Footer */
