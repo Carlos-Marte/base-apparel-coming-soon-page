@@ -71,8 +71,46 @@ body {
     height: auto;
 }
 
-
-.footer {
-    grid-area: footer;
+/* Main */
+.main {
+    /* background: red; */
+    margin-top: 2.5em;
+    grid-area: content;
     grid-column: 1 / -1;
 }
+
+
+/* Main text */
+.main__text {
+    /* background: green; */
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Main span */
+.main__span {
+    color: var(--desaturated-red);
+    font-weight: 300;
+}
+
+/* Text h1 */
+.main__h1 {
+    font-size: 2.5em;
+    font-weight: 600;
+    letter-spacing: 10px;
+    line-height: 1;
+    text-transform: uppercase;
+    color: var(--dark-grayish-red);
+}
+
+
+/* Text p */
+.main__p {
+    margin: 1em 0 0 0;
+    font-weight: 400;
+    line-height: 1.2;
+    color: var(--desaturated-red);
+}
+
+.footer {margin-top: 3em; grid-area: footer; grid-column: 1 / -1;}
