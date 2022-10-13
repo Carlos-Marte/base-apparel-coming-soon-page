@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font: 'Josefin Sans', sans-serif;
+
+    /* Colores */
+
+    /* Primarios */
+    --desaturated-red: hsl(0, 36%, 70%);
+    --soft-red: hsl(0, 93%, 68%);
+
+    /* Neutrales */
+    --dark-grayish-red: hsl(0, 6%, 24%);
+
+}
