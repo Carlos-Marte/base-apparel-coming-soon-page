@@ -38,8 +38,6 @@ body {
 
 /* Header */
 .header {
-    /* background: green; */
-
     grid-area: header;
     grid-column: 1 / -1;
 }
@@ -73,7 +71,6 @@ body {
 
 /* Main */
 .main {
-    /* background: red; */
     margin-top: 2.5em;
     grid-area: content;
     grid-column: 1 / -1;
@@ -82,7 +79,6 @@ body {
 
 /* Main text */
 .main__text {
-    /* background: green; */
     width: 90%;
     margin: 0 auto;
     text-align: center;
@@ -123,7 +119,6 @@ body {
 
 /* Form input */
 .form__input {
-    /* background: red; */
     width: 90%;
     padding: 1.4em 1.5rem;
     border: 1px solid var(--desaturated-red);
