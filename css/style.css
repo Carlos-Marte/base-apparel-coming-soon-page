@@ -27,12 +27,12 @@ body {
     /* background: red; */
 
     display: grid;
-    grid-template-areas: 
-    "header"  "header"
-    "hero"    "hero"
-    "content" "content"
-    "content" "content"
-    "footer"  "footer";
+    grid-template-areas:
+        "header" "header"
+        "hero" "hero"
+        "content" "content"
+        "content" "content"
+        "footer" "footer";
     grid-template-columns: repeat(2, 1fr);
 }
 
@@ -113,4 +113,63 @@ body {
     color: var(--desaturated-red);
 }
 
-.footer {margin-top: 3em; grid-area: footer; grid-column: 1 / -1;}
+/* Form */
+.form {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 2em;
+    text-align: center;
+    position: relative;
+    /* background: red; */
+}
+
+/* Form input */
+.form__input {
+    /* background: red; */
+    width: 90%;
+    padding: 1.4em 1.5rem;
+    border: 1px solid var(--desaturated-red);
+    border-radius: 30px;
+    outline: none;
+    color: var(--dark-grayish-red);
+}
+
+/* Input placeholder */
+.form__input::placeholder {
+    font-family: var(--font);
+    color: var(--desaturated-red);
+}
+
+/* Input error */
+/* 
+.form__input--error {
+    border-color: var(--soft-red);
+} */
+
+/* Form boton */
+.form__boton {
+    height: 100%;
+    padding: 1em 1.9rem;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 50;
+}
+
+/* Boton imagen */
+.form__img {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+}
+
+/* Footer */
+.footer {
+    margin-top: 3em;
+    grid-area: footer;
+    grid-column: 1 / -1;
+}
