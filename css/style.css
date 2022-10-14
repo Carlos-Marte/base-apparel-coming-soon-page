@@ -21,6 +21,7 @@
 body {
     width: 100%;
     max-width: 375px;
+    height: 100vh;
     margin: 0 auto;
     font-family: var(--font);
     font-size: 16px;
@@ -28,11 +29,11 @@ body {
 
     display: grid;
     grid-template-areas:
-        "header" "header"
-        "hero" "hero"
+        "header"  "header"
+        "hero"    "hero"
         "content" "content"
         "content" "content"
-        "footer" "footer";
+        "footer"  "footer";
     grid-template-columns: repeat(2, 1fr);
 }
 
@@ -67,6 +68,11 @@ body {
     display: inline-block;
     width: 100%;
     height: auto;
+}
+
+/* Hero img desktop */
+.hero__img--desktop {
+    display: none;
 }
 
 /* Main */
@@ -191,4 +197,62 @@ body {
     margin-top: 3em;
     grid-area: footer;
     grid-column: 1 / -1;
+}
+
+
+/* Desktop */
+
+@media only screen and (min-width: 1280px) {
+
+    body {
+        max-width: 1440px;
+        
+        grid-template-areas: none;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    }
+
+    /* Header */
+    .header {
+        grid-column: span 2;
+        grid-row: 1;
+        align-self: center;
+    }
+
+    /* Hero */
+    .hero {
+
+
+        grid-column: 3 / -1;
+        grid-row: 1 / -1;
+    }
+
+    /* Hero mobile */
+    .hero__img {
+        display: none;
+    }
+
+    /* Hero desktop */
+    .hero__img--desktop {
+        display: block;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* Main */
+    .main {
+        margin-top: 0;
+
+        grid-column: span 2;
+        grid-row: 2 / -1;
+        align-self: center;
+    }
+
+    
+
+    /* Footer */
+    .footer {
+        display: none;
+    }
+    
 }
