@@ -158,6 +158,7 @@ body {
     border: none;
     border-radius: 25px;
     background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    transition: all .2s ease;
 
     position: absolute;
     top: 0;
@@ -165,11 +166,17 @@ body {
     z-index: 100;
 }
 
-/* Focus Form boton */
-.form__boton:focus {
+/* Hover Form boton */
+.form__boton:hover {
     background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 100%, 75%));
     box-shadow: 0px 5px 20px var(--desaturated-red);
 }
+
+/* Active Form boton */
+.form__boton:active {
+    box-shadow: none;
+}
+
 
 /* Boton imagen */
 .form__img {
@@ -286,7 +293,6 @@ body {
 
         grid-column: span 2;
         grid-row: 2 / -1;
-
     }
 
     /* Main text */
@@ -330,15 +336,8 @@ body {
         padding: 1em 3rem;
         border-radius: 35px;
         cursor: pointer;
-        transition: all .2s ease;
 
         right: 20%;
-    }
-
-    /* Hover Form boton */
-    .form__boton:hover {
-        background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 100%, 75%));
-        box-shadow: 0px 5px 20px var(--desaturated-red);
     }
 
     /* Boton imagen error */
