@@ -29,11 +29,11 @@ body {
 
     display: grid;
     grid-template-areas:
-        "header"  "header"
-        "hero"    "hero"
+        "header" "header"
+        "hero" "hero"
         "content" "content"
         "content" "content"
-        "footer"  "footer";
+        "footer" "footer";
     grid-template-columns: repeat(2, 1fr);
 }
 
@@ -109,7 +109,7 @@ body {
 
 /* Text p */
 .main__p {
-    margin: 1em 0 0 0;
+    margin-top: 1em;
     font-weight: 400;
     line-height: 1.5;
     color: var(--desaturated-red);
@@ -131,6 +131,7 @@ body {
     border-radius: 30px;
     outline: none;
     color: var(--dark-grayish-red);
+    font-weight: 600;
 }
 
 /* Input placeholder */
@@ -139,12 +140,18 @@ body {
     color: var(--desaturated-red);
 }
 
+.form__input:autofill {
+    background-color: red;
+}
+
 /* Input error */
 
 .form__input--error {
+    /* Aumentar border a 2 - 2.5 */
     border-color: var(--soft-red);
 }
 
+/* Form contenedor */
 .form__contenedor {
     position: relative;
 }
@@ -160,14 +167,19 @@ body {
     position: absolute;
     top: 0;
     right: 0;
-    z-index: 50;
+    z-index: 100;
+}
+
+/* Focus Form boton */
+.form__boton:focus {
+    background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 100%, 75%));
+    box-shadow: 0px 5px 20px var(--desaturated-red);
 }
 
 /* Boton imagen */
 .form__img {
     display: inline-block;
     width: 100%;
-    height: auto;
 }
 
 /* Boton imagen error */
@@ -204,9 +216,29 @@ body {
 
 @media only screen and (min-width: 1280px) {
 
+    html {
+        position: relative;
+    }
+
+    /* Patron */
+    html::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-image: url(/images/bg-pattern-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: left;
+    }
+
     body {
         max-width: 1440px;
-        
+        position: relative;
+
         grid-template-areas: none;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(5, 1fr);
@@ -219,10 +251,13 @@ body {
         align-self: center;
     }
 
+    /* Logo img */
+    .logo__img {
+        width: 60%;
+    }
+
     /* Hero */
     .hero {
-
-
         grid-column: 3 / -1;
         grid-row: 1 / -1;
     }
@@ -241,18 +276,79 @@ body {
 
     /* Main */
     .main {
-        margin-top: 0;
+        margin-top: 5rem;
 
         grid-column: span 2;
         grid-row: 2 / -1;
-        align-self: center;
+
     }
 
-    
+    /* Main text */
+    .main__text {
+        text-align: left;
+    }
+
+    /* Text h1 */
+    .main__h1 {
+        font-size: 5em;
+    }
+
+    /* Text p */
+    .main__p {
+        width: 80%;
+        font-size: 1.2em;
+    }
+
+    /* Form */
+    .form {
+        margin-top: 2.5em;
+        text-align: left;
+    }
+
+    /* Form input */
+    .form__input {
+        width: 80%;
+        padding: 1.5em 1.5rem;
+        border-radius: 40px;
+        font-size: 1em;
+    }
+
+    /* Input placeholder */
+    .form__input::placeholder {
+        font-size: 1.2em;
+    }
+
+    /* Form boton */
+    .form__boton {
+        height: 68px;
+        padding: 1em 3rem;
+        border-radius: 35px;
+        cursor: pointer;
+        transition: all .2s ease;
+
+        right: 20%;
+    }
+
+    /* Hover Form boton */
+    .form__boton:hover {
+        background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 100%, 75%));
+        box-shadow: 0px 5px 20px var(--desaturated-red);
+    }
+
+    /* Boton imagen error */
+    .form__img-error {
+        right: 40%;
+    }
+
+    /* Mensaje error */
+    .form__p {
+        font-size: 1em;
+        margin-left: 1.5rem;
+    }
 
     /* Footer */
     .footer {
         display: none;
     }
-    
+
 }
