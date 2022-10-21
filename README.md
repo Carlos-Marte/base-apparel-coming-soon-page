@@ -18,11 +18,11 @@
 
 #### Desktop
 
-![Vista Desktop](./readme-images/desktop.PNG "Desktop")
+![Vista Desktop](https://i.postimg.cc/Bv0Tm96s/desktop.png "Desktop")
 
 #### Mobile
 
-![Vista Mobile](./readme-images/mobile.PNG "Mobile")
+![Vista Mobile](https://i.postimg.cc/13p6nCKd/mobile.png "Mobile")
 
 #### Contraseña generada
 
