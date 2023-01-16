@@ -1,6 +1,6 @@
 # Frontend Mentor - Base Apparel coming soon page
 
-:pushpin: Práctica proveniente de FrontendMentor. Esta realizado usando `<HTML>`, `<CSS>` y `<JS>`.
+:pushpin: Práctica proveniente de FrontendMentor. Está realizado usando `<HTML>`, `<CSS>` y `<JS>`.
 
 :pushpin: Maquetada con grid.
 
