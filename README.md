@@ -1,15 +1,12 @@
 # Frontend Mentor - Base Apparel coming soon page
 
-![Design preview for the Base Apparel coming soon page coding challenge](./design/desktop-preview.jpg)
-
-
-#  Frontend Mentor - Base Apparel coming soon page
-
 :pushpin: Práctica proveniente de FrontendMentor. Esta realizado usando `<HTML>`, `<CSS>` y `<JS>`.
 
-:pushpin: Maquetada con grid layout.
+:pushpin: Maquetada con grid.
 
 :pushpin: Comprueba si el email introducido es correcto.
+
+:pushpin: Responsive tanto en moviles, tablets y desktop.
 
 :link: <a href="https://frontendmentor1-carlosmartedev.netlify.app/" target="_BLANK" title="¡Ir!">Ir a la página</a>
 
@@ -24,6 +21,6 @@
 
 ![Vista Mobile](https://i.postimg.cc/13p6nCKd/mobile.png "Mobile")
 
-#### Contraseña generada
+#### Comprobación
 
-![Contraseña generada](./readme-images/pass.PNG "Contraseña generada")
+![Comprobación de email](https://i.postimg.cc/N0Zx690Z/email.png "Comprobación de email")
