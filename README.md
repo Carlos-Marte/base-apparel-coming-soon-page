@@ -15,12 +15,8 @@
 
 #### Desktop
 
-![Vista Desktop](https://i.postimg.cc/Bv0Tm96s/desktop.png "Desktop")
+![Vista Desktop](-https://i.postimg.cc/Bv0Tm96s/desktop.png "Desktop")
 
 #### Mobile
 
-![Vista Mobile](https://i.postimg.cc/13p6nCKd/mobile.png "Mobile")
-
-#### Comprobación
-
-![Comprobación de email](https://i.postimg.cc/N0Zx690Z/email.png "Comprobación de email")
+![Vista Mobile](-https://i.postimg.cc/13p6nCKd/mobile.png "Mobile")
